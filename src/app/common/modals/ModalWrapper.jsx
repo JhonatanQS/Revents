@@ -9,9 +9,7 @@ export default function ModalWrapper({ children, size, header }) {
     <Modal
       open={true}
       onClose={() =>
-        setTimeout(function () {
-          dispatch(closeModal());
-        }, 0)
+          dispatch(closeModal())
       }
       size={size}
     >
