@@ -8,6 +8,7 @@ export default function SignedOutMenu({setAuthenticated}) {
     <Menu.Item position='right'>
       <Button onClick={()=> dispatch(openModal({modalType:'LoginForm'}))} basic inverted content='Login' />
       <Button
+       onClick={()=> dispatch(openModal({modalType:'RegisterForm'}))}
         basic
         inverted
         content='Register'
